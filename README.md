@@ -25,3 +25,26 @@ Or we can use the command. txt format is used as the file is saved in txt format
 make -f makefile.txt
 ```
 ## Creating  Makefile2
+
+Here we will be using constants to store the the values of gcc and I. 
+The $ sign is used to deference in the place of usage.
+Please check the commands below.
+Here also we need to add a " TAB" space before GCC
+
+```
+CC = gcc
+CFLAGS = -I.
+output : main.o func.o
+    $(CC) -o output main.o func.o $(CFLAGS)
+ ```
+Here see below, the command line commands that run when the above script is called
+
+-gcc -I.   -c -o main.o main.c
+-gcc -I.   -c -o func.o func.c
+-gcc -o output main.o func.o -I.
+
+commands  I have used are 
+```
+make  -f makefile2.txt
+```
+## Create Makefile3 
