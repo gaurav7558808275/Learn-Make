@@ -47,4 +47,29 @@ commands  I have used are
 ```
 make  -f makefile2.txt
 ```
+Here by putting the object files --main.o and func.o--in the dependency list and in the rule, make knows it must first compile the .c versions individually, and then build the executable output.
+
 ## Create Makefile3 
+
+Here we will add an extra constant called DEPS or dependecies.
+DEPS = main.h
+The new formate explanation are as follows
+The -c flag says to generate the object file, the -o $@ says to put the output of the compilation in the file named on the left side of the :, the $< is the first item in the dependencies list, and the CFLAGS macro is defined as above.
+The file contents are as foolows
+```
+CC =gcc
+CFLAGS =-I.
+DEPS =main.h
+
+%.o : %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+output : main.o func.o
+	$(CC) -o output main.o func.o
+```
+The commands used in Command Prompt are as follows
+```
+make -f makefile3.txt
+```
+
+
+
