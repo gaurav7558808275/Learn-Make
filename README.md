@@ -12,5 +12,5 @@ Unfortunately, this approach to compilation has two downfalls. First, if you los
 I created a make file with the following contents
 
 >make1: main.c func.c
->	gcc -o output main.c func.c -I.
+>    gcc -o output main.c func.c -I.
 
