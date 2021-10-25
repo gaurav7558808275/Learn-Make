@@ -70,6 +70,18 @@ The commands used in Command Prompt are as follows
 ```
 make -f makefile3.txt
 ```
+##Create Makefile4
+```
+CC =gcc
+CFLAGS =-I.
+DEPS =main.h
+OBJK = main.o func.o
 
+%.o : %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+output : $(OBJK)
+	$(CC) -o $@ $< $(CFLAGS)
+```
+Addition of a new variable OBJK as obj files.
 
 
