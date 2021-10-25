@@ -84,6 +84,6 @@ output : $(OBJK)
 ```
 Addition of a new variable OBJK as obj files.
 
-For more information go through this link [https://cs.colby.edu/maxwell/courses/tutorials/maketutor/]
+For more information go through this link [A simple makefile tutorial](https://cs.colby.edu/maxwell/courses/tutorials/maketutor/)
 
 
