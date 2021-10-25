@@ -1,0 +1,2 @@
+make1: main.c func.c
+	gcc -o output main.c func.c -I.

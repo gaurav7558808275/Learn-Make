@@ -1,0 +1,4 @@
+CC = gcc
+CFLAGS = -I.
+output : main.o func.o
+	$(CC) -o output main.o func.o $(CFLAGS)

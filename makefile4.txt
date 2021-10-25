@@ -1,0 +1,9 @@
+CC =gcc
+CFLAGS =-I.
+DEPS =main.h
+OBJK = main.o func.o
+
+%.o : %.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+output : $(OBJK)
+	$(CC) -o $@ $< $(CFLAGS)
