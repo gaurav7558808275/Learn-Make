@@ -20,8 +20,8 @@ you can just use this command in commandline
 ```
 make
 ```
-Or we can use the command
+Or we can use the command. txt format is used as the file is saved in txt format
 ```
-make -f makefile
+make -f makefile.txt
 ```
 ## Creating  Makefile2
