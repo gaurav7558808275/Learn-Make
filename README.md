@@ -11,6 +11,11 @@ Unfortunately, this approach to compilation has two downfalls. First, if you los
 ## **Creating Makefile1**
 I created a make file with the following contents
 be sure that the GCC is used after a TAB space
+the contents are as follows
+```
+make1: main.c func.c
+    gcc -o output main.c func.c -I.
+```
 you can just use this command in commandline
 ```
 make
@@ -19,7 +24,4 @@ Or we can use the command
 ```
 make -f makefile
 ```
-```
-make1: main.c func.c
-    gcc -o output main.c func.c -I.
-```
+
