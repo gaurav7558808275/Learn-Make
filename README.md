@@ -39,9 +39,9 @@ output : main.o func.o
  ```
 Here see below, the command line commands that run when the above script is called
 
--gcc -I.   -c -o main.o main.c
--gcc -I.   -c -o func.o func.c
--gcc -o output main.o func.o -I.
+- gcc -I.   -c -o main.o main.c
+- gcc -I.   -c -o func.o func.c
+- gcc -o output main.o func.o -I.
 
 commands  I have used are 
 ```
